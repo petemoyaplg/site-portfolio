@@ -1,0 +1,16 @@
+@import "../utils/variables";
+
+#accueil .container-fluid {
+    background-color: $background-color;
+    padding: $padding-section;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.bg-black {
+    @extend .bg-dark;
+    background-color: rgb(16, 12, 12) !important;
+}

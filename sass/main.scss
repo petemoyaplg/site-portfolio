@@ -1,0 +1,10 @@
+@import "directory/vendor/boostrap/bootstrap.scss";
+@import "directory/component/sectionAccueil";
+
+.row,
+.col,
+.col-4,
+.col-8,
+.card {
+    border: 1px solid black !important;
+}
