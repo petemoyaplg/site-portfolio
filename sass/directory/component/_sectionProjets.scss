@@ -1,0 +1,15 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+@include typographieTitle();
+
+#projets .container {
+    background-color: #100c0c;
+}
+#projets .container .row {
+    padding: 1rem;
+    margin: auto;
+}
+#projets h2{
+    color: white;
+}

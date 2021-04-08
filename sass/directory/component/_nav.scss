@@ -1,0 +1,114 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+@include typographieTitle();
+.logo{
+    transform: translateX(-70%);
+    display: block;
+}
+header .container{
+    position: fixed;
+    z-index: 7;
+}
+.bg-black {
+    @extend .bg-dark;
+    background-color: rgb(16, 12, 12) !important;
+    color: rgb(211, 3, 3) !important;
+}
+
+// .navbar--nav{
+//     @extend .navbar-nav;
+// }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(16, 12, 12);
+    position: fixed;
+    // z-index: 7;
+    border-bottom: 1px solid rgb(231, 234, 240);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    
+}
+.navbar--nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    transform: translateX(10%);
+    // position: fixed;
+}
+.navbar--nav li {
+    list-style-type: none;
+}
+.navbar--nav li a {
+    color: white;
+    text-decoration: none;
+}
+.burger {
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 1024px) {
+    .navbar--nav {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navbar--nav {
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top: 9vh;
+        background-color: rgb(16, 12, 12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        /* opacity: .7; */
+    }
+    .navbar--nav li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

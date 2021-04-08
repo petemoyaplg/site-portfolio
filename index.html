@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>Gaspard PETEMOYA</title>
 </head>
@@ -15,87 +17,227 @@
     <header class="bg-black">
         <div class="container">
             <div class="row">
-                <nav class="col navbar navbar-expand-lg navbar-dark bg-black">
-                    <img src="images/nav_barre/Free_Sample_By_Wix.jpeg" width="100" height="100" alt="Site logo">
+                <nav class="col container">
+                    <img src="images/nav_barre/Free_Sample_By_Wix.jpeg" class="logo" width="80" height="80" alt="logo">
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="navbarContent" class="collapse navbar-collapse div-nav">
-                        <ul class="navbar-nav text-center">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#accueil">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#competances">Compétances</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projets">Projets</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
+                    <ul class="navbar--nav">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#competances">Compétances</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </div>
                 </nav>
             </div>
+
         </div>
     </header>
     <!-- Corp de la page -->
     <main>
         <section id="accueil">
-            <div class="container-fluid">
+            <div class="div__background">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col">
+                        <h1 class="title__name"><br><span class="dev"></span></h1>
+                    </div>
+                    <!-- <div class="col--4">
+                        <img src="images/carte/plg4.png" alt="photo de gaspard" class="image--dev">
+                    </div> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="div__description col">
+                        <h2>À propos de moi</h2>
+                        <hr>
+                        <p class="div__description--para"></p>
+                    </div>
+                    <!-- <div class="col--4">
+                        
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Section compétance -->
+        <section id="competances">
+            <div class="container">
+                <div class="row">
+                    <h2>Mes compétences</h2>
+                    <p>
+                        J'ai de l'expérience dans une grande variété de technologies tout au long de ma carrière. Ma
+                        passion et mon objectif sont le développement d'infrastructures et d'applications qui stimulent
+                        l'analyse des données et l'automatisation des processus.
+                    </p>
+                    <div class="frontend col">
+                        <h3>Compétence front-end</h3>
                         <div class="row">
-                            <h1>Gaspard PETEMOYA <br><span>Développeur Fullstack</span></h1>
-                        </div>
-                        <div class="row">
-                            <h2>À propos de moi</h2>
-                            <p>
-                                Je suis un développeur Web Full Stack, situé dans la région de Portland, Oregon. J'aime
-                                concevoir et créer, autant que j'aime trouver des solutions à des problèmes difficiles
-                                et maximiser l'efficacité équilibrée avec élégance. Pas de problème trop petit ou trop
-                                grand, j'adore atteindre les étoiles.
-
-                                Le génie logiciel est une de mes passions depuis mon plus jeune âge. J'ai commencé à
-                                programmer il y a de nombreuses années, mais j'ai récemment eu l'occasion de
-                                perfectionner mes compétences en me concentrant sur le développement Web après avoir
-                                poursuivi d'autres passions, telles que la restauration et la photographie.
-                                (Fait amusant, toutes les images de ce site ont été prises par moi! L'image principale
-                                était lors de l'éclipse solaire de 2018.)
-
-                                Mes autres intérêts sont le bénévolat pour les programmes jeunesse et la santé mentale.
-                                J'ai participé à de nombreux efforts de bénévolat pour redonner à la communauté. J'adore
-                                aider les autres quand je le peux, notamment par l'enseignement, le mentorat ou
-                                simplement en m'écoutant. Mon objectif est d'aider tout le monde à se sentir un peu plus
-                                connecté, les uns aux autres et au monde, dans ce vaste univers.
-                            </p>
+                            <div class="col">
+                                <ul class="liste--competance">
+                                    <li><img src="images/skils/frontend/icons8-html-5-144.png" alt="html" width="70"
+                                            height="70"><br>HTML 5</li>
+                                    <li><img src="images/skils/frontend/icons8-css3-144.png" alt="css" width="70"
+                                            height="70"><br>CSS 3
+                                    </li>
+                                    <li><img src="images/skils/frontend/icons8-javascript-144.png" alt="javascript"
+                                            width="70" height="70"><br>Javascript</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="liste--competance">
+                                    <li><img src="images/skils/frontend/icons8-sass-144.png" alt="saas" width="70"
+                                            height="70"><br>Sass</li>
+                                    <li><img src="images/skils/addSkils/bootstrap-solid.svg" alt="bootstrap" width="70"
+                                            height="70"><br>Bootstrap</li>
+                                    <li><img src="images/skils/addSkils/materialize-removebg-preview.png" alt="vuejs"
+                                            width="70" height="70"><br>Materialize</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="images/carte/plg.jpg" alt="Animations CSS modernes" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <p class="card-text"> </p>
+                    <div class="backend col">
+                        <h3>Compétence back-end</h3>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="liste--competance">
+                                    <li><img src="images/skils/backend/icons8-python-144.png" alt="css" width="70"
+                                            height="70"><br>Python</li>
+                                    <li><img src="images/skils/backend/icons8-java-144.png" alt="javascript" width="70"
+                                            height="70"><br>Java</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="liste--competance">
+                                    <li><img src="images/skils/backend/icons8-mysql-logo-144.png" alt="mysql" width="70"
+                                            height="70"><br>MySQL</li>
+                                    <li><img src="images/skils/backend/icons8-microsoft-sql-server-144.png" alt="saas"
+                                            width="70" height="70"><br>SQL Server</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Compétances supplémantaire -->
+                    <div class="competencesSup col">
+                        <h3>Compétence additionnel</h3>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="liste--competance">
+                                    <li><img src="images/skils/addSkils/icons8-linux-96.png" alt="html" width="70"
+                                            height="70"><br>Linux</li>
+                                    <li><img src="images/skils/addSkils/icons8-windows-10-144.png" alt="css" width="70"
+                                            height="70"><br>Windows</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="liste--competance">
+                                    <li><img src="images/skils/addSkils/GIT-60x60.png" alt="saas" width="70"
+                                            height="70"><br>GIT</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="competances">
-
+        <!-- Section projets -->
+        <section id="projets">
+            <div class="container">
+                <h2>Mes projets réalisés</h2>
+                <div class="row">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/projets/4.png" alt="certificate" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Site de Kinshasa Digital</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/projets/histoire d'internet.png" alt="certificate"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Site de l'histoire d'internet</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/projets/formulaire-de-contact.png" alt="certificate"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formulaire de contact</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/projets/formulaire-de-contact-dynamique.png" alt="certificate"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formulaire de contact</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
-        <section id="projets"></section>
-        <section id="contact"></section>
     </main>
+    <!-- footer -->
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Contact</h2>
+                        <ul class="contact--list">
+                            <li class="contact--item"><a href=""><img src="images/contact/icons8-facebook.svg"
+                                        alt="facebook" width="50" height="50"></a></li>
+                            <li class="contact--item"><a href="https://www.instagram.com/gaspard.plg/"><img
+                                        src="images/contact/icons8-instagram.svg" alt="instagram" width="50"
+                                        height="50"></a></li>
+                            <li class="contact--item"><a href="https://www.instagram.com/gaspard.plg/"><img
+                                        src="images/contact/icons8-twitter.svg" alt="instagram" width="50"
+                                        height="50"></a></li>
+                            <li class="contact--item"><a href=""><img src="images/contact/icons8-github.svg"
+                                        alt="github" width="50" height="50"></a></li>
+                            <li class="contact--item"><a href="https://www.linkedin.com/in/gaspard-petemoya/"><img
+                                        src="images/contact/icons8-linkedin.svg" alt="linkedin" width="50"
+                                        height="50"></a></li>
+                            <li class="contact--item"><a href="https://www.gaspardplg11@gmail.com"><img
+                                        src="images/contact/icons8-gmail-96.png" alt="gmail" width="50" height="50"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row copyright">
+                    <div class="col-md-8">
+                        <h6>© Developed & Designed by Gaspard PETEMOYA (PLG)</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="" id="langue" class="form--control justify-content-between">
+                            <option value="fr">Français</option>
+                            <option value="en">Anglais</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
     <script src="js/app.js"></script>
+    <script src="js/animation.js"></script>
 </body>
 
 </html>

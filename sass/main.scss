@@ -1,10 +1,21 @@
 @import "directory/vendor/boostrap/bootstrap.scss";
+@import "directory/component/nav";
+@import "directory/component/card";
 @import "directory/component/sectionAccueil";
+@import "directory/component/sectionCompetances";
+@import "directory/component/sectionProjets";
+@import "directory/component/footer";
 
-.row,
-.col,
-.col-4,
-.col-8,
-.card {
-    border: 1px solid black !important;
-}
+// .row,
+// .col {
+//     border: 1px solid black !important;
+// }
+
+// .col-4,
+// .col-8,
+// .card {
+//     border: 1px solid rgb(121, 0, 0) !important;
+// }
+// body {
+//     background-color: rgb(231, 234, 240);
+// }

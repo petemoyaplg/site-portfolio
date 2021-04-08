@@ -1,16 +1,46 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
-#accueil .container-fluid {
-    background-color: $background-color;
-    padding: $padding-section;
+// @include sectionPage();
+@include typographieTitle();
+.div__background {
+    @extend .container;
+    height: 80vh;
+    background-image: url("../images/backgroung/wallpapertip.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    .title__name {
+        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+    }
+}
+#accueil .container .row h2 {
+    color: rgb(255, 255, 255);
+}
+#accueil .container {
+    background-color: rgb(16, 12, 12);
+    // padding: 20px;
 }
 
-h1,
-h2 {
+.col--4 {
+    @extend .col-4;
+    // padding: 0 50px;
+    .image--dev {
+        @extend .card-img-top;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.dev {
+    font-size: 2rem;
+}
+
+.div__description {
+    color: white;
+    // padding: 0 5rem 5rem 5rem;
     text-align: center;
-}
-
-.bg-black {
-    @extend .bg-dark;
-    background-color: rgb(16, 12, 12) !important;
 }
