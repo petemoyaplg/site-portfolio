@@ -14,90 +14,77 @@
             {
                 "frontend": [
                     {
-                        "html": [
-                            "HTML 5",
-                            "images/skils/frontend/icons8-html-5-144.png"
-                        ]
+                        "alt": "html",
+                        "src": "images/skils/frontend/icons8-html-5-144.png",
+                        "text": "HTML 5"
                     },
                     {
-                        "css": [
-                            "CSS 3",
-                            "images/skils/frontend/icons8-css3-144.png"
-                        ]
+                        "alt": "css",
+                        "src": "images/skils/frontend/icons8-css3-144.png",
+                        "text": "CSS 3"
                     },
                     {
-                        "javascript": [
-                            "Javascript",
-                            "images/skils/frontend/icons8-javascript-144.png"
-                        ]
+                        "alt": "javascript",
+                        "src": "images/skils/frontend/icons8-javascript-144.png",
+                        "text": "Javascript"
                     },
                     {
-                        "sass": [
-                            "Saas",
-                            "images/skils/frontend/icons8-sass-144.png"
-                        ]
+                        "alt": "saas",
+                        "src": "images/skils/frontend/icons8-sass-144.png",
+                        "text": "Sass"
                     },
                     {
-                        "bootsrapp": [
-                            "Boostrap",
-                            "images/skils/addSkils/bootstrap-solid.svg"
-                        ]
+                        "alt": "boostrap",
+                        "src": "images/skils/addSkils/bootstrap-solid.svg",
+                        "text": "Boostrap"
                     },
                     {
-                        "materialize": [
-                            "Materialize",
-                            "images/skils/addSkils/materialize-removebg-preview.png"
-                        ]
+                        "alt": "materialize",
+                        "src": "images/skils/addSkils/materialize-removebg-preview.png",
+                        "text": "Materialize"
                     }
                 ]
             },
             {
                 "backend": [
                     {
-                        "python": [
-                            "Python",
-                            "images/skils/backend/icons8-python-144.png"
-                        ]
+                        "alt": "python",
+                        "src": "images/skils/backend/icons8-python-144.png",
+                        "text": "Python"
                     },
                     {
-                        "java": [
-                            "Java",
-                            "images/skils/backend/icons8-java-144.png"
-                        ]
+                        "alt": "java",
+                        "src": "images/skils/backend/icons8-java-144.png",
+                        "text": "Java"
                     },
                     {
-                        "mysql": [
-                            "MySQL",
-                            "images/skils/backend/icons8-mysql-logo-144.png"
-                        ]
+                        "alt": "mysql",
+                        "src": "images/skils/backend/icons8-mysql-logo-144.png",
+                        "text": "MySQL"
                     },
                     {
-                        "sqlserver": [
-                            "SQL Server",
-                            "images/skils/backend/icons8-microsoft-sql-server-144.png"
-                        ]
+                        "alt": "sqlserver",
+                        "src": "images/skils/backend/icons8-microsoft-sql-server-144.png",
+                        "text": "SQL Server"
                     }
                 ]
             },
             {
                 "competencesSup": [
                     {
-                        "git": [
-                            "GIT",
-                            "images/skils/addSkils/GIT-60x60.png"
-                        ]
+                        "alt": "git",
+                        "src": "images/skils/addSkils/GIT-60x60.png",
+                        "text": "GIT"
                     },
                     {
-                        "linux": [
-                            "Linux",
-                            "images/skils/addSkils/icons8-linux-96.png"
-                        ]
+                        "alt": "linux",
+                        "src": "images/skils/addSkils/icons8-linux-96.png",
+                        "text": "Linux"
                     },
                     {
-                        "windows": [
-                            "Windows",
-                            "images/skils/addSkils/icons8-windows-10-144.png"
-                        ]
+                        "alt": "windows",
+                        "src": "images/skils/addSkils/icons8-windows-10-144.png",
+                        "text": "Windows"
                     }
                 ]
             }
@@ -140,90 +127,77 @@
             {
                 "frontend": [
                     {
-                        "html": [
-                            "HTML 5",
-                            "images/skils/frontend/icons8-html-5-144.png"
-                        ]
+                        "alt": "html",
+                        "src": "images/skils/frontend/icons8-html-5-144.png",
+                        "text": "HTML 5"
                     },
                     {
-                        "css": [
-                            "CSS 3",
-                            "images/skils/frontend/icons8-css3-144.png"
-                        ]
+                        "alt": "css",
+                        "src": "images/skils/frontend/icons8-css3-144.png",
+                        "text": "CSS 3"
                     },
                     {
-                        "javascript": [
-                            "Javascript",
-                            "images/skils/frontend/icons8-javascript-144.png"
-                        ]
+                        "alt": "javascript",
+                        "src": "images/skils/frontend/icons8-javascript-144.png",
+                        "text": "Javascript"
                     },
                     {
-                        "sass": [
-                            "Saas",
-                            "images/skils/frontend/icons8-sass-144.png"
-                        ]
+                        "alt": "saas",
+                        "src": "images/skils/frontend/icons8-sass-144.png",
+                        "text": "Sass"
                     },
                     {
-                        "bootsrapp": [
-                            "Boostrap",
-                            "images/skils/addSkils/bootstrap-solid.svg"
-                        ]
+                        "alt": "boostrap",
+                        "src": "images/skils/addSkils/bootstrap-solid.svg",
+                        "text": "Boostrap"
                     },
                     {
-                        "materialize": [
-                            "Materialize",
-                            "images/skils/addSkils/materialize-removebg-preview.png"
-                        ]
+                        "alt": "materialize",
+                        "src": "images/skils/addSkils/materialize-removebg-preview.png",
+                        "text": "Materialize"
                     }
                 ]
             },
             {
                 "backend": [
                     {
-                        "python": [
-                            "Python",
-                            "images/skils/backend/icons8-python-144.png"
-                        ]
+                        "alt": "python",
+                        "src": "images/skils/backend/icons8-python-144.png",
+                        "text": "Python"
                     },
                     {
-                        "java": [
-                            "Java",
-                            "images/skils/backend/icons8-java-144.png"
-                        ]
+                        "alt": "java",
+                        "src": "images/skils/backend/icons8-java-144.png",
+                        "text": "Java"
                     },
                     {
-                        "mysql": [
-                            "MySQL",
-                            "images/skils/backend/icons8-mysql-logo-144.png"
-                        ]
+                        "alt": "mysql",
+                        "src": "images/skils/backend/icons8-mysql-logo-144.png",
+                        "text": "MySQL"
                     },
                     {
-                        "sqlserver": [
-                            "SQL Server",
-                            "images/skils/backend/icons8-microsoft-sql-server-144.png"
-                        ]
+                        "alt": "sqlserver",
+                        "src": "images/skils/backend/icons8-microsoft-sql-server-144.png",
+                        "text": "SQL Server"
                     }
                 ]
             },
             {
                 "competencesSup": [
                     {
-                        "git": [
-                            "GIT",
-                            "images/skils/addSkils/GIT-60x60.png"
-                        ]
+                        "alt": "git",
+                        "src": "images/skils/addSkils/GIT-60x60.png",
+                        "text": "GIT"
                     },
                     {
-                        "linux": [
-                            "Linux",
-                            "images/skils/addSkils/icons8-linux-96.png"
-                        ]
+                        "alt": "linux",
+                        "src": "images/skils/addSkils/icons8-linux-96.png",
+                        "text": "Linux"
                     },
                     {
-                        "windows": [
-                            "Windows",
-                            "images/skils/addSkils/icons8-windows-10-144.png"
-                        ]
+                        "alt": "windows",
+                        "src": "images/skils/addSkils/icons8-windows-10-144.png",
+                        "text": "Windows"
                     }
                 ]
             }

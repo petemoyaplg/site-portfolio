@@ -1,7 +1,8 @@
 const choixLangue = document.getElementById( 'langue' );
-const paraCompetance = document.querySelector( '.detaille__langage' );
 const detailleLangage = document.querySelector( '.detaille__langage span' );
 const listLangage = [ 'HTML5', 'CSS3', 'Javascript', 'Java' ];
+//
+
 
 
 window.addEventListener( 'load', function () {
@@ -9,7 +10,7 @@ window.addEventListener( 'load', function () {
         return response.json();
     } ).then( function ( data ) {
         setInfo( data.infos );
-        setSkills( data.skills );
+        setSkills( data.skils );
     } );
 } );
 
@@ -18,6 +19,7 @@ choixLangue.addEventListener( 'change', function () {
 } );
 
 function setInfo ( { nom, prenom, description, competance, aPropos } ) {
+
     const h1 = document.querySelector( '.title__name' );
     let span = document.querySelector( '.dev' );
 
@@ -25,14 +27,31 @@ function setInfo ( { nom, prenom, description, competance, aPropos } ) {
     h1.appendChild( document.createElement( 'br' ) );
     h1.appendChild( span );
     span.textContent = `${ description }`;
-    console.log( competance );
+
+    const paraCompetance = document.querySelector( '.detaille__langage' );
     paraCompetance.textContent = `${ competance } `;
+    paraCompetance.appendChild( detailleLangage );
 
     document.querySelector( '.div__description--para' ).textContent = aPropos;
 
 }
-function setSkills () {
-
+function setSkills ( skills ) {
+    document.querySelector( '.para__experiance' ).textContent = skills[ 0 ].commentaire;
+    const frontSkillsArray = skills[ 0 ].frontend;
+    const front1 = document.querySelector( '.front1' );
+    const front2 = document.querySelector( '.front2' );
+    for ( let i = 0; i < 3; i++ ) {
+        let li = document.createElement( 'li' );
+        let img = document.createElement( 'img' );
+        img.setAttribute( 'src', `${frontSkillsArray[i]}` );
+        img.setAttribute( 'alt', '' );
+        img.setAttribute( 'width', '70' );
+        img.setAttribute( 'height', '70' );
+        li.appendChild( img );
+        li.appendChild( document.createElement( 'br' ) );
+        li.appendChild( document.createTextNode( '' ) );
+        front1.appendChild( li );
+    }
 }
 
 // let compteurMot = 0;
