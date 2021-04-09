@@ -2,11 +2,12 @@
 @import "../utils/mixins";
 
 @include typographieTitle();
-.logo{
+
+.logo {
     transform: translateX(-70%);
     display: block;
 }
-header .container{
+header .container {
     position: fixed;
     z-index: 7;
 }
@@ -30,7 +31,6 @@ nav {
     border-bottom: 1px solid rgb(231, 234, 240);
     font-weight: bolder;
     font-size: 1.1rem;
-    
 }
 .navbar--nav {
     display: flex;
@@ -43,9 +43,22 @@ nav {
     list-style-type: none;
 }
 .navbar--nav li a {
-    color: white;
+    color: rgb(231, 234, 240);
     text-decoration: none;
+    list-style: none;
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: rgb(231, 234, 240);
+        transition: width 0.4s;
+    }
+    &:hover::after {
+        width: 100%;
+    }
 }
+
 .burger {
     display: none;
 }

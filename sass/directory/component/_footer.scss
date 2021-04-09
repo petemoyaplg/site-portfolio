@@ -2,6 +2,7 @@
 @import "../utils/mixins";
 
 @include typographieTitle();
+// @include underline(rgb(22, 15, 15));
 
 #contact .container {
     background-color: rgb(231, 234, 240);
@@ -14,7 +15,7 @@
     // width: 15%;
     background: rgb(16, 12, 12) !important;
     color: white !important;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     cursor: pointer;
 }
 .contact--list {
@@ -23,6 +24,20 @@
     margin-bottom: 2rem;
     .contact--item {
         list-style: none;
+        & a {
+            display: inline-block;
+        }
+        & a::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: rgb(16, 12, 12);
+            transition: width 0.4s;
+        }
+        & a:hover::after {
+            width: 100%;
+        }
     }
 }
 .div--langue {

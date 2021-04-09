@@ -10747,6 +10747,10 @@ h6,
   font-family: "Montserrat", sans-serif;
 }
 
+h1, .h1 {
+  margin-top: 10rem;
+}
+
 h1, .h1,
 h2,
 .h2,
@@ -10771,7 +10775,7 @@ h2, .h2 {
 }
 
 h6, .h6 {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
 }
 
@@ -10814,8 +10818,20 @@ nav {
 }
 
 .navbar--nav li a {
-  color: white;
+  color: #e7eaf0;
   text-decoration: none;
+  list-style: none;
+}
+.navbar--nav li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e7eaf0;
+  transition: width 0.4s;
+}
+.navbar--nav li a:hover::after {
+  width: 100%;
 }
 
 .burger {
@@ -10914,6 +10930,10 @@ h6,
   font-family: "Montserrat", sans-serif;
 }
 
+h1, .h1 {
+  margin-top: 10rem;
+}
+
 h1, .h1,
 h2,
 .h2,
@@ -10938,7 +10958,7 @@ h2, .h2 {
 }
 
 h6, .h6 {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
 }
 
@@ -10957,6 +10977,12 @@ h6, .h6 {
 
 #accueil .container .row h2, #accueil .div__background .row h2, #accueil .container .row .h2, #accueil .div__background .row .h2 {
   color: white;
+}
+
+.detaille__langage {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
 }
 
 #accueil .container, #accueil .div__background {
@@ -10994,6 +11020,10 @@ h6,
   font-family: "Montserrat", sans-serif;
 }
 
+h1, .h1 {
+  margin-top: 10rem;
+}
+
 h1, .h1,
 h2,
 .h2,
@@ -11018,7 +11048,7 @@ h2, .h2 {
 }
 
 h6, .h6 {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
 }
 
@@ -11067,6 +11097,10 @@ h6,
   font-family: "Montserrat", sans-serif;
 }
 
+h1, .h1 {
+  margin-top: 10rem;
+}
+
 h1, .h1,
 h2,
 .h2,
@@ -11091,7 +11125,7 @@ h2, .h2 {
 }
 
 h6, .h6 {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
 }
 
@@ -11124,6 +11158,10 @@ h6,
   font-family: "Montserrat", sans-serif;
 }
 
+h1, .h1 {
+  margin-top: 10rem;
+}
+
 h1, .h1,
 h2,
 .h2,
@@ -11148,7 +11186,7 @@ h2, .h2 {
 }
 
 h6, .h6 {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
 }
 
@@ -11174,6 +11212,20 @@ h6, .h6 {
 }
 .contact--list .contact--item {
   list-style: none;
+}
+.contact--list .contact--item a {
+  display: inline-block;
+}
+.contact--list .contact--item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #100c0c;
+  transition: width 0.4s;
+}
+.contact--list .contact--item a:hover::after {
+  width: 100%;
 }
 
 .div--langue {
