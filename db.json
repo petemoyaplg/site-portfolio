@@ -1,22 +1,5 @@
 {
     "fr": {
-        "entete": [
-            "Accueil",
-            "Compétances",
-            "Projets",
-            "Contact"
-        ],
-        "titre": [
-            {
-                "h2_accueil": "À propos de moi",
-                "h2_competance": "Mes compétences",
-                "h3_front_end": "Compétence front-end",
-                "h3_back_end": "Compétence back-end",
-                "h3_addSkills": "Compétence additionnel",
-                "h2_projet": "Mes projets réalisés",
-                "h2_contact": "Contact"
-            }
-        ],
         "infos": {
             "nom": "PETEMOYA",
             "prenom": "Gaspard",
@@ -130,23 +113,6 @@
         ]
     },
     "en": {
-        "entete": [
-            "Home",
-            "Skills",
-            "Projects",
-            "Contact"
-        ],
-        "titre": [
-            {
-                "h2_accueil": "About me",
-                "h2_competance": "My skills",
-                "h3_front_end": "Compétence front-end",
-                "h3_back_end": "Front-end competence",
-                "h3_addSkills": "Additional jurisdiction",
-                "h2_projet": "My completed projects",
-                "h2_contact": "Contact"
-            }
-        ],
         "infos": {
             "nom": "PETEMOYA",
             "prenom": "Gaspard",

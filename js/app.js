@@ -16,10 +16,15 @@ function fecth ( langue ) {
     fetch( `https://my-json-server.typicode.com/petemoyaplg/site-portfolio/${ langue }` ).then( function ( response ) {
         return response.json();
     } ).then( function ( data ) {
+        setEntete( data.enete );
         setInfo( data.infos );
         setSkills( data.skils );
         setProjet( data.projets );
     } );
+}
+function setEntete ( entete ) {
+    const enteteArray = document.querySelectorAll( '.entete' );
+    console.log( enteteArray )
 }
 function setInfo ( { nom, prenom, description, competance, aPropos } ) {
 
