@@ -2,7 +2,7 @@ const choixLangue = document.getElementById( 'langue' );
 const detailleLangage = document.querySelector( '.detaille__langage span' );
 const listLangage = [ 'HTML5', 'CSS3', 'Javascript', 'Java' ];
 //
-
+const URLmockapi = 'https://6070744785c3f000174702ca.mockapi.io/gaspard/v1/';
 
 
 window.addEventListener( 'load', function () {
@@ -14,15 +14,15 @@ choixLangue.addEventListener( 'change', function () {
 } );
 
 function fecth ( langue ) {
-    fetch( `https://6070744785c3f000174702ca.mockapi.io/gaspard/v1/${ langue }` )
+    fetch( `${ URLmockapi }${ langue }` )
         .then( function ( response ) {
             return response.json();
         } )
         .then( function ( data ) {
             setInfo( data[ 0 ].infos );
-            setSkills( data[ 0 ].skills );
+            setSkills( data[ 0 ].skils );
             setProjet( data[ 0 ].projets );
-            setContact( data[ 0 ].contacts );
+            // setContact( data[ 0 ].contacts );
             // setInfo( data.infos );
             // setSkills( data.skills );
             // setProjet( data.projets );
@@ -54,6 +54,9 @@ function setSkills ( skills ) {
     const front1 = document.querySelector( '.front1' );
     const front2 = document.querySelector( '.front2' );
 
+    removeAllChild( front1 );
+    removeAllChild( front2 );
+
     for ( let i = 0; i < 3; i++ ) {
         let li = document.createElement( 'li' );
         let img = document.createElement( 'img' );
@@ -81,6 +84,9 @@ function setSkills ( skills ) {
     const backSkillsArray = skills[ 2 ].backend;
     const back1 = document.querySelector( '.back1' );
     const back2 = document.querySelector( '.back2' );
+
+    removeAllChild( back1 );
+    removeAllChild( back2 );
 
     for ( let i = 0; i < 2; i++ ) {
         let li = document.createElement( 'li' );
@@ -110,6 +116,9 @@ function setSkills ( skills ) {
     const addSkils1 = document.querySelector( '.addSkils1' );
     const addSkils2 = document.querySelector( '.addSkils2' );
 
+    removeAllChild( addSkils1 );
+    removeAllChild( addSkils2 );
+
     for ( let i = 0; i < 2; i++ ) {
         let li = document.createElement( 'li' );
         let img = document.createElement( 'img' );
@@ -134,10 +143,37 @@ function setSkills ( skills ) {
     addSkils2.appendChild( li );
 }
 function setProjet ( projets ) {
+    const projetLinkArray = document.querySelectorAll( '.link__projet' );
+    const projetImgArray = document.querySelectorAll( '.card-img-top' );
+    const projetTitleArray = document.querySelectorAll( '.card-title' );
+
+    console.log( projetLinkArray );
+    for ( let i = 0, c = projetLinkArray; i < c; i++ ) {
+        const projetLink = projetLinkArray[ i ];
+        const projetImg = projetImgArray[ i ];
+        const projetTitle = projetTitleArray[ i ];
+
+        console.log( projetLinkArray[ i ] );
+
+        // projetLink.setAttribute( 'href', projets[ i ].href );
+        // projetLink.setAttribute( 'target', 'blank' );
+
+        // projetImg.setAttribute( 'src', projets[ i ].src );
+        // projetImg.setAttribute( 'alt', projets[ i ].alt );
+
+        // removeAllChild( projetLink );
+        // projetLink.appendChild( projetImg );
+
+        // projetTitle.textContent = projets[ i ].titre;
+    }
+}
+function contacts ( projets ) {
 
 }
-function setProjet ( projets ) {
-
+function removeAllChild ( element ) {
+    while ( element.firstChild ) {
+        element.removeChild( element.firstChild );
+    }
 }
 // let compteurMot = 0;
 // let compteurLettre = 0;
