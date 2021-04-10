@@ -10,22 +10,26 @@ window.addEventListener( 'load', function () {
 } );
 
 choixLangue.addEventListener( 'change', function () {
-    console.log( choixLangue.value );
+    fecth( choixLangue.value );
 } );
+
 function fecth ( langue ) {
-    fetch( `https://my-json-server.typicode.com/petemoyaplg/site-portfolio/${ langue }` ).then( function ( response ) {
-        return response.json();
-    } ).then( function ( data ) {
-        setEntete( data.enete );
-        setInfo( data.infos );
-        setSkills( data.skils );
-        setProjet( data.projets );
-    } );
+    fetch( `https://6070744785c3f000174702ca.mockapi.io/gaspard/v1/${ langue }` )
+        .then( function ( response ) {
+            return response.json();
+        } )
+        .then( function ( data ) {
+            setInfo( data[ 0 ].infos );
+            setSkills( data[ 0 ].skills );
+            setProjet( data[ 0 ].projets );
+            setContact( data[ 0 ].contacts );
+            // setInfo( data.infos );
+            // setSkills( data.skills );
+            // setProjet( data.projets );
+            // setProjet( data.contacts );
+        } );
 }
-function setEntete ( entete ) {
-    const enteteArray = document.querySelectorAll( '.entete' );
-    console.log( enteteArray )
-}
+
 function setInfo ( { nom, prenom, description, competance, aPropos } ) {
 
     const h1 = document.querySelector( '.title__name' );
@@ -129,7 +133,12 @@ function setSkills ( skills ) {
     li.appendChild( document.createTextNode( `${ addSkillsArray[ 2 ].text }` ) );
     addSkils2.appendChild( li );
 }
+function setProjet ( projets ) {
 
+}
+function setProjet ( projets ) {
+
+}
 // let compteurMot = 0;
 // let compteurLettre = 0;
 // let texte = '';

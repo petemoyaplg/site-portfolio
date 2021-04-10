@@ -6,6 +6,9 @@
 @import "directory/component/sectionProjets";
 @import "directory/component/footer";
 
+html {
+    scroll-behavior: smooth;
+}
 // .row,
 // .col {
 //     border: 1px solid black !important;

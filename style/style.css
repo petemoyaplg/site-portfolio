@@ -11142,6 +11142,10 @@ h6, .h6 {
   color: white;
 }
 
+.card a img {
+  object-fit: fill;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -11235,6 +11239,10 @@ h6, .h6 {
 .copyright {
   background-color: #100c0c;
   color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

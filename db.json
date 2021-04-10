@@ -93,22 +93,53 @@
             {
                 "titre": "Site de Kinshasa Digital",
                 "src": "images/projets/projet-site-kda.png",
+                "href": "https://optimistic-yalow-528790.netlify.app/",
                 "alt": "Site de kinshasa digital"
             },
             {
                 "titre": "Site de l'histoire d'internet",
                 "src": "images/projets/histoire-internet.png",
+                "href": "https://petemoyaplg.github.io/projet_html_css/index.html",
                 "alt": "Site de l'istoire d'internet"
             },
             {
                 "titre": "Formulaire de contact statique",
                 "src": "images/projets/formulaire-de-contact-statique.png",
+                "href": "https://petemoyaplg.github.io/formulaire/index.html",
                 "alt": "formulaire de contact statique"
             },
             {
                 "titre": "Formulaire de contact dynamique",
                 "src": "images/projets/formulaire-de-contact-dynamique.png",
+                "href": "https://petemoyaplg.github.io/formulaire-de-contact/",
                 "alt": "formulaire de contact dynamique"
+            }
+        ],
+        "contacts": [
+            {
+                "src": "images/contact/icons8-twitter.svg",
+                "href": "https://twitter.com/GaspardPetemoya",
+                "alt": "contact twitter"
+            },
+            {
+                "src": "images/contact/icons8-phone-128.png",
+                "href": "tel:+243817255003",
+                "alt": "contact téléphone"
+            },
+            {
+                "src": "images/contact/icons8-github.svg",
+                "href": "https://github.com/petemoyaplg/",
+                "alt": "contact github"
+            },
+            {
+                "src": "images/contact/icons8-linkedin.svg",
+                "href": "https://www.linkedin.com/in/gaspard-petemoya/",
+                "alt": "contact linkedin"
+            },
+            {
+                "src": "images/contact/icons8-gmail-96.png",
+                "href": "mailto:gaspardplg11@gmail.com",
+                "alt": "contact gmail"
             }
         ]
     },
@@ -206,22 +237,53 @@
             {
                 "titre": "Kinshasa Digital website",
                 "src": "images/projets/projet-site-kda.png",
+                "href": "https://optimistic-yalow-528790.netlify.app/",
                 "alt": "Kinshasa Digital website"
             },
             {
                 "titre": "Internet history site",
                 "src": "images/projets/histoire-internet.png",
+                "href": "https://petemoyaplg.github.io/projet_html_css/index.html",
                 "alt": "Internet history site"
             },
             {
                 "titre": "Static contact form",
                 "src": "images/projets/formulaire-de-contact-statique.png",
+                "href": "https://petemoyaplg.github.io/formulaire/index.html",
                 "alt": "Static contact form"
             },
             {
                 "titre": "Dynamic contact form",
                 "src": "images/projets/formulaire-de-contact-dynamique.png",
+                "href": "https://petemoyaplg.github.io/formulaire-de-contact/",
                 "alt": "Dynamic contact form"
+            }
+        ],
+        "contacts": [
+            {
+                "src": "images/contact/icons8-twitter.svg",
+                "href": "https://twitter.com/GaspardPetemoya",
+                "alt": "contact twitter"
+            },
+            {
+                "src": "images/contact/icons8-phone-128.png",
+                "href": "tel:+243817255003",
+                "alt": "contact phone"
+            },
+            {
+                "src": "images/contact/icons8-github.svg",
+                "href": "https://github.com/petemoyaplg/",
+                "alt": "contact github"
+            },
+            {
+                "src": "images/contact/icons8-linkedin.svg",
+                "href": "https://www.linkedin.com/in/gaspard-petemoya/",
+                "alt": "contact linkedin"
+            },
+            {
+                "src": "images/contact/icons8-gmail-96.png",
+                "href": "mailto:gaspardplg11@gmail.com",
+                "alt": "contact gmail"
             }
         ]
     }
