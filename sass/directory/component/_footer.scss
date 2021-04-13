@@ -12,7 +12,7 @@
 }
 .form--control {
     @extend .form-control;
-    // width: 15%;
+    appearance: none;
     background: rgb(16, 12, 12) !important;
     color: white !important;
     margin-top: 0.5rem;
@@ -24,6 +24,8 @@
     margin-bottom: 2rem;
     .contact--item {
         list-style: none;
+        position: relative;
+        right: 1rem;
         & a {
             display: inline-block;
         }
@@ -40,10 +42,10 @@
         }
     }
 }
-.div--langue {
-    transform: translateY(100%);
-}
+
 .copyright {
     background-color: rgb(16, 12, 12);
     color: white;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
 }

@@ -10777,8 +10777,14 @@ h2, .h2 {
 h6, .h6 {
   text-align: left;
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  h6, .h6 {
+    text-align: center;
+  }
+}
 .logo {
   transform: translateX(-70%);
   display: block;
@@ -10960,8 +10966,14 @@ h2, .h2 {
 h6, .h6 {
   text-align: left;
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  h6, .h6 {
+    text-align: center;
+  }
+}
 .div__background {
   height: 80vh;
   background-image: url("../images/backgroung/wallpapertip.jpg");
@@ -11050,8 +11062,14 @@ h2, .h2 {
 h6, .h6 {
   text-align: left;
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  h6, .h6 {
+    text-align: center;
+  }
+}
 #competances .container, #competances .div__background {
   background-color: #e7eaf0;
 }
@@ -11127,8 +11145,14 @@ h2, .h2 {
 h6, .h6 {
   text-align: left;
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  h6, .h6 {
+    text-align: center;
+  }
+}
 #projets .container, #projets .div__background {
   background-color: #100c0c;
 }
@@ -11140,6 +11164,10 @@ h6, .h6 {
 
 #projets h2, #projets .h2 {
   color: white;
+}
+
+.div--card {
+  margin-bottom: 0.5rem;
 }
 
 .card a img {
@@ -11192,8 +11220,14 @@ h2, .h2 {
 h6, .h6 {
   text-align: left;
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  h6, .h6 {
+    text-align: center;
+  }
+}
 #contact .container, #contact .div__background {
   background-color: #e7eaf0;
 }
@@ -11203,6 +11237,7 @@ h6, .h6 {
 }
 
 .form--control {
+  appearance: none;
   background: #100c0c !important;
   color: white !important;
   margin-top: 0.5rem;
@@ -11216,6 +11251,8 @@ h6, .h6 {
 }
 .contact--list .contact--item {
   list-style: none;
+  position: relative;
+  right: 1rem;
 }
 .contact--list .contact--item a {
   display: inline-block;
@@ -11232,13 +11269,11 @@ h6, .h6 {
   width: 100%;
 }
 
-.div--langue {
-  transform: translateY(100%);
-}
-
 .copyright {
   background-color: #100c0c;
   color: white;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 html {
