@@ -5,18 +5,16 @@ const listLangage = [ "HTML 5", "CSS 3", "Javascript", "Java" ];
 const URLmockapi = "https://6070744785c3f000174702ca.mockapi.io/gaspard/v1/";
 
 window.addEventListener( "load", function () {
-  fecth( choixLangue.value );
+  loadData( choixLangue.value );
 } );
 
 choixLangue.addEventListener( "change", function () {
-  fecth( choixLangue.value );
+  loadData( choixLangue.value );
 } );
 
-function fecth ( langue ) {
+function loadData ( langue ) {
   fetch( `${ URLmockapi }${ langue }` )
-    .then( function ( response ) {
-      return response.json();
-    } )
+    .then( function ( response ) { return response.json(); } )
     .then( function ( data ) {
       setInfo( data[ 0 ].infos );
       setSkills( data[ 0 ].skils );
